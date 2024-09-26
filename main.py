@@ -12,3 +12,5 @@ def about():
 
 
 app.run(debug=True)
+
+# Need to fix some bugs
