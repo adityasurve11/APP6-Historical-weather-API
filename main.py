@@ -19,4 +19,4 @@ app.run(debug=True)
 
 # API soon
 
-# not useful i
+# not useful i guess
