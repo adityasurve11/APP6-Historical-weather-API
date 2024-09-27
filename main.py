@@ -16,3 +16,5 @@ app.run(debug=True)
 # Need to fix some bugs
 
 # Going to create our own api in this app.
+
+# going to add API tommorow
