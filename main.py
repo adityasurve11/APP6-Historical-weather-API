@@ -6,9 +6,10 @@ app = Flask("Website")
 def home():
     return render_template("home.html")
 
-@app.route("/about/")
-def about():
-    return render_template("about.html")
+@app.route("/api/v1/<station>/<date>")
+def about(station, date):
+    temperature = 23
+    return str(temperature)
 
 
 app.run(debug=True)
