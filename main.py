@@ -2,21 +2,14 @@ from flask import Flask, render_template
 
 app = Flask("Website")
 
-@app.route("/home")
+@app.route("/")
 def home():
-    return render_template("Tutorial.html")
+    return render_template("tutorial.html")
 
-@app.route("/about")
+@app.route("/about/")
 def about():
     return render_template("about.html")
 
 
 app.run(debug=True)
 
-# Need to fix some bugs
-
-# Going to create our own api in this app.
-
-# API soon
-
-# not useful i guess
