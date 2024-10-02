@@ -12,7 +12,8 @@ def home():
 
 @app.route("/api/v1/<station>/<date>")
 def about(station, date):
-    df = pd.read_csv("data_small/TG_STAID" + str(station).zfill(6) + ".txt")
+    filename = "data_small/TG_STAID" + str(station).zfill(6) + " .txt"
+    df = pd.read_csv()
     temperature = 23
     return {"station": station,
             "date": date,
