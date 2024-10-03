@@ -24,6 +24,8 @@ def about(station, date):
             "temperature": temperature}
 
 @app.route("/api/v1/<station>")
+def all_data(station):
+    filename = "data_small/TG_STAID" + str(station).zfill(6) + " .txt"
 
 
 if __name__ == "__main__":
