@@ -34,6 +34,8 @@ def all_data(station):
 def yearly(station, year):
     filename = "data_small/TG_STAID" + str(station).zfill(6) + " .txt"
     df = pd.read_csv(filename, skiprows=20, parse_dates=["    DATE"])
+    result = df[df["    DATE"].str.startswith(str(year))]
+    print(result)
 
 
 if __name__ == "__main__":
