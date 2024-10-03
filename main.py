@@ -5,7 +5,9 @@ import pandas as pd
 app = Flask(__name__)
 
 
-variable = "Hello there"
+stations = pd.read_csv("")
+
+
 @app.route("/")
 def home():
     return render_template("home.html", data=variable)
