@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 
-stations = pd.read_csv("")
+stations = pd.read_csv("data_small/stations.txt")
 
 
 @app.route("/")
