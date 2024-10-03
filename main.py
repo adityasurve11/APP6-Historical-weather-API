@@ -5,9 +5,10 @@ import pandas as pd
 app = Flask(__name__)
 
 
+variable = "Hello there"
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("home.html", data=variable)
 
 
 @app.route("/api/v1/<station>/<date>")
