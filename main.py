@@ -30,6 +30,8 @@ def all_data(station):
     result = df.to_dict(orient="records")
     return result
 
+@app.route("/api/v1/<station>/<year>")
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
