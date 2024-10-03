@@ -30,7 +30,8 @@ def all_data(station):
     result = df.to_dict(orient="records")
     return result
 
-@app.route("/api/v1/<station>/<year>")
+@app.route("/api/v1/yearly/<station>/<year>")
+def yearly(station, year):
 
 
 if __name__ == "__main__":
