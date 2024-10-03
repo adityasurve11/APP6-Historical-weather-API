@@ -10,7 +10,7 @@ stations = pd.read_csv("data_small/stations.txt", skiprows=17)
 
 @app.route("/")
 def home():
-    return render_template("home.html", data=variable)
+    return render_template("home.html", data=stations)
 
 
 @app.route("/api/v1/<station>/<date>")
